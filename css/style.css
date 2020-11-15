@@ -1,0 +1,73 @@
+body {
+	font-family: 'Lato', sans-serif;
+	font-style: Black 900 italic;
+}
+
+
+.footer {
+	/*background-color: #6D05FA;*/
+	padding: 10px;
+	display: flex;
+	justify-content: flex-end;
+	background-image: linear-gradient(#6D05FA, #00aae9);
+	position: fixed;
+	  bottom: 0px;
+	  left: opx;
+  	width: 100%;
+}
+
+.footer ul li {
+	display: inline-block;
+}
+
+i {
+	font-size: 30px;
+	padding: 5px;
+}
+
+
+.imghero:hover {
+    transform: scale(1.3,1.3);
+    transition: all .5s;
+}
+
+.hero {
+	padding: 0px;
+	height: 700px;
+	background-image: url("../images/entrenamiento.jpg");
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: 99.6%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*FORMULARIO DE CONTACTO*/
+
+.form {
+	display: flex;
+	justify-content: center;
+
+
+}
+
+form {
+	display: inline;
+	justify-content: center;
+	border: 5px solid black;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+}
+
+form .boton {
+	margin: 10px;
+}
+
+.titulo2 {
+	font-size: 30px;
+	font-weight: bold;
+}

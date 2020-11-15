@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Entrenamientos Personalizados - Alumnos</title>
+		<meta name="description" content="Aplicación para que profesores y entrenadores personales mejoren su planificación y evaluación de sus entrenamientos, llevando a sus alumnos a obtener el máximo de los beneficios. Desde aca se podrá entrenar y planificar los entrenamientos. DEsde esta sección se podrá cargar y actualizar los datos de los alumnos">
+		<meta name="keywords" content="entrenadores, personal trainner, entrenamientos, rutinas, ejercicios, fitness">
+		<!--GOOGLE FONTS-->
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,500;1,900&display=swap" rel="stylesheet">
+		<!--BOOTSTRAP-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<!--CUSTOM CSS-->
+		<link rel="stylesheet" href="css/style.css" />
+
+  	</head>
+  	
+	<body>
+
+		<div class="container-fluid"> 
+
+			<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+				
+				<a class="navbar-brand" href="index.html">
+					<img src="images/pesas.jpg" width="30" height="30" class="d-inline-block align-top rounded-circle" alt="Logo">
+					Entrenamientos personalizados
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+					<div class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
+						<a class="nav-item nav-link" href="index.html">Inicio</a>
+						<a class="nav-item nav-link" href="entrenar.html">Entrenar</a>
+						<a class="nav-item nav-link active" href="alumnos.html">Alumnos</a>
+						<a class="nav-item nav-link" href="ejercicios.html">Ejercicios</a>
+						<a class="nav-item nav-link" href="faqs.html">FAQS</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	   
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12 titulo2 text-center">Carga de un nuevo alumno</div>
+				
+			</div>
+
+			<div class="row justify-content-center">
+				<form>
+				
+					<div class="form-group">
+						<form>
+							<div class="form-row p-2">
+							  <div class="col">
+								<input type="text" class="form-control" placeholder="Nombre">
+							  </div>
+							  <div class="col">
+								<input type="text" class="form-control" placeholder="Apellido">
+							  </div>
+							</div>
+						  
+							<div class="form-check form-check-inline p-2 justify-content-center">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+								<label class="form-check-label" for="inlineRadio1">Hombre</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+								<label class="form-check-label" for="inlineRadio2">Mujer</label>
+							  </div>
+							</div>
+
+							<div class="form-row align-items-center p-2">
+								<div class="col-auto my-1">
+								  <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+								  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+									<option selected>Cada cuánto tiempo haces ejercicio?</option>
+									<option value="1">Nunca</option>
+									<option value="2">Ocasionalmente</option>
+									<option value="3">Frecuentemente</option>
+									<option value="4">Diariamentee</option>
+								  </select>
+								</div>
+							</div>
+
+							<div class="form-group p-2">
+								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+							  </div>
+							  
+							  <div class="form-group form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Quieres que te enviemos novedades?</label>
+							  </div>
+															
+							<div class="col-auto my-1 p-2">
+							  <button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+							
+
+						</form>
+					</div>
+		</div>
+
+
+		<div class="container-fluid"> 
+			<div class="footer">				
+				<ul>
+					<li><a href="https://twitter.com/entrenamientosp" target="blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="https://facebook.com/entrenamientosp" target="blank"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="https://instagram.com/entrenamientosp" targer="blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	
+		
+		
+		<!--FONT AWESOME SCRIPT-->
+		<script src="https://kit.fontawesome.com/b6d38b2193.js" crossorigin="anonymous"></script>
+		<!--BOOTSTRAP SCRIPT-->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		
+
+    </body>
+</html>
