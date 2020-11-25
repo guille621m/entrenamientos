@@ -33,16 +33,34 @@ i {
 
 .hero {
 	padding: 0px;
-	height: 700px;
-	background-image: url("../images/entrenamiento.jpg");
+	height: 500px;
+	/*background-image: url("../images/entrenamiento.jpg");
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: center;
-	background-size: 99.6%;
+	background-size: 99.6%;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
+video { 
+   
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+  
+	position: fixed;    
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%); 
+		
+	z-index: -100;
+	  
+	background-size: cover;
+  
+  }
 
 
 /*FORMULARIO DE CONTACTO*/
@@ -54,14 +72,14 @@ i {
 
 }
 
-form {
+/*form {
 	display: inline;
 	justify-content: center;
 	border: 5px solid black;
 	border-radius: 10px;
 	margin: 10px;
 	padding: 10px;
-}
+}*/
 
 form .boton {
 	margin: 10px;
@@ -70,4 +88,12 @@ form .boton {
 .titulo2 {
 	font-size: 30px;
 	font-weight: bold;
+}
+
+#nuevoAlumno {
+	display: none;
+}
+
+#editarAlumno {
+	display: none;
 }

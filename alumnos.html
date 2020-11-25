@@ -3,8 +3,8 @@
   	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Entrenamientos Personalizados - Alumnos</title>
-		<meta name="description" content="Aplicación para que profesores y entrenadores personales mejoren su planificación y evaluación de sus entrenamientos, llevando a sus alumnos a obtener el máximo de los beneficios. Desde aca se podrá entrenar y planificar los entrenamientos. DEsde esta sección se podrá cargar y actualizar los datos de los alumnos">
+		<title>Entrenamientos Personalizados</title>
+		<meta name="description" content="Aplicación para que profesores y entrenadores personales mejoren su planificación y evaluación de sus entrenamientos, llevando a sus alumnos a obtener el máximo de los beneficios">
 		<meta name="keywords" content="entrenadores, personal trainner, entrenamientos, rutinas, ejercicios, fitness">
 		<!--GOOGLE FONTS-->
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -32,8 +32,8 @@
 				<div class="collapse navbar-collapse " id="navbarTogglerDemo01">
 					<div class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
 						<a class="nav-item nav-link" href="index.html">Inicio</a>
-						<a class="nav-item nav-link" href="entrenar.html">Entrenar</a>
 						<a class="nav-item nav-link active" href="alumnos.html">Alumnos</a>
+						<a class="nav-item nav-link" href="entrenar.html">Entrenar</a>
 						<a class="nav-item nav-link" href="ejercicios.html">Ejercicios</a>
 						<a class="nav-item nav-link" href="faqs.html">FAQS</a>
 					</div>
@@ -42,67 +42,142 @@
 		</div>
 	   
 
-		<div class="container">
-			<div class="row">
-				<div class="col-12 titulo2 text-center">Carga de un nuevo alumno</div>
-				<h1>Modificiacion para practicar git</h1>
-				
+		<div class="container-fluid bg-light mt-3">
+		
+			<div class="row justify-content-center" id=seleccionaAlumno>
+				<div class="form-group col-8 pt-2">
+					<div class="form-group text-center">
+						<label for="exampleFormControlSelect2"><h2>Selecciona un alumno</h2></label>
+						<select multiple class="form-control" id="exampleFormControlSelect2">
+						<option>Orlando Pérez</option>
+						<option>Antonio López</option>
+						<option>Amalia Gutierrez</option>
+						<option>Armando Ortiz</option>
+						<option>Jose Gómez</option>
+						</select>
+					</div>		
+								
+					<div class="col-8 text-center ml-auto mr-auto">
+						<button class="btn btn-primary w-20" onclick="nuevoAlumno()">Nuevo</button>
+						<button class="btn btn-primary w-20" onclick="editarAlumno()">Editar</button>
+						<button class="btn btn-primary w-20">Evolución</button>
+						<a href="entrenar.html"><button class="btn btn-primary w-20">Entrenar</button></a>
+					</div>
+				</div>
 			</div>
 
-			<div class="row justify-content-center">
-				<form>
-				
-					<div class="form-group">
-						<form>
-							<div class="form-row p-2">
-							  <div class="col">
-								<input type="text" class="form-control" placeholder="Nombre">
-							  </div>
-							  <div class="col">
-								<input type="text" class="form-control" placeholder="Apellido">
-							  </div>
-							</div>
-						  
-							<div class="form-check form-check-inline p-2 justify-content-center">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-								<label class="form-check-label" for="inlineRadio1">Hombre</label>
-							  </div>
-							  <div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-								<label class="form-check-label" for="inlineRadio2">Mujer</label>
-							  </div>
-							</div>
-
-							<div class="form-row align-items-center p-2">
-								<div class="col-auto my-1">
-								  <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-								  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-									<option selected>Cada cuánto tiempo haces ejercicio?</option>
-									<option value="1">Nunca</option>
-									<option value="2">Ocasionalmente</option>
-									<option value="3">Frecuentemente</option>
-									<option value="4">Diariamentee</option>
-								  </select>
-								</div>
-							</div>
-
-							<div class="form-group p-2">
-								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
-							  </div>
-							  
-							  <div class="form-group form-check">
-								<input type="checkbox" class="form-check-input" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">Quieres que te enviemos novedades?</label>
-							  </div>
-															
-							<div class="col-auto my-1 p-2">
-							  <button type="submit" class="btn btn-primary">Submit</button>
-							</div>
-							
-
-						</form>
+			<div id="nuevoAlumno">
+				<div class="row justify-content-center p-2">
+					<h2 class="col-10 text-center">Agrega un alumno nuevo</h2>
+					<div class="col-4">
+					<input type="text" class="form-control" placeholder="Nombre">
 					</div>
+					<div class="col-4">
+					<input type="text" class="form-control" placeholder="Apellido">
+					</div>
+				</div>
+				
+				<div class="row justify-content-center p-2"> 
+					<div class="col-1 form-check form-check-inline text-center">
+					<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					<label class="form-check-label" for="inlineRadio1">Hombre</label>
+					</div>
+					<div class="col-1 form-check form-check-inline text-center">
+					<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+					<label class="form-check-label" for="inlineRadio2">Mujer</label>
+					</div>
+				</div>
+				
+				<div class="row justify-content-center p-2">
+					<div class="col-8 my-1 justify-content-center">
+					<label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+					<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+						<option selected>Cada cuánto tiempo haces ejercicio?</option>
+						<option value="1">Nunca</option>
+						<option value="2">Ocasionalmente</option>
+						<option value="3">Frecuentemente</option>
+						<option value="4">Diariamentee</option>
+					</select>
+					</div>
+				</div>
+				
+				<div class="row justify-content-center p-2">
+					<div class="col-8 form-group">
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+					</div>
+					
+					<div class="col-8 form-group form-check text-center">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">Quieres que te enviemos novedades?</label>
+					</div>
+				</div>
+
+				<div class="row justify-content-center p-2">
+					<div class="col-8 text-center ml-auto mr-auto">
+						<button class="btn btn-primary" onclick="cancelarCarga()">Cancelar</button>
+						<button type="submit" class="btn btn-primary" onclick="guardarAlumno()">Guardar</button>
+					</div>
+				</div>
+			</div>
+
+			<div id="editarAlumno">
+				<div class="row justify-content-center p-2">
+					<h2 class="col-10 text-center">Edita los datos de este alumno</h2>
+					<div class="col-4">
+					<input type="text" class="form-control" placeholder="Nombre">
+					</div>
+					<div class="col-4">
+					<input type="text" class="form-control" placeholder="Apellido">
+					</div>
+				</div>
+				
+				<div class="row justify-content-center p-2"> 
+					<div class="col-1 form-check form-check-inline text-center">
+					<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					<label class="form-check-label" for="inlineRadio1">Hombre</label>
+					</div>
+					<div class="col-1 form-check form-check-inline text-center">
+					<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+					<label class="form-check-label" for="inlineRadio2">Mujer</label>
+					</div>
+				</div>
+				
+				<div class="row justify-content-center p-2">
+					<div class="col-8 my-1 justify-content-center">
+					<label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+					<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+						<option selected>Cada cuánto tiempo haces ejercicio?</option>
+						<option value="1">Nunca</option>
+						<option value="2">Ocasionalmente</option>
+						<option value="3">Frecuentemente</option>
+						<option value="4">Diariamentee</option>
+					</select>
+					</div>
+				</div>
+				
+				<div class="row justify-content-center p-2">
+					<div class="col-8 form-group">
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+					</div>
+					
+					<div class="col-8 form-group form-check text-center">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">Quieres que te enviemos novedades?</label>
+					</div>
+				</div>
+
+				<div class="row justify-content-center p-2">
+					<div class="col-8 text-center ml-auto mr-auto">
+						<button class="btn btn-primary" onclick="cancelarCarga()">Cancelar</button>
+						<button type="submit" class="btn btn-primary" onclick="guardarAlumno()">Guardar</button>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+
+
 
 
 		<div class="container-fluid"> 
@@ -122,6 +197,7 @@
 		<!--BOOTSTRAP SCRIPT-->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		<script src="js/alumnos.js"></script>
 		
 
     </body>
