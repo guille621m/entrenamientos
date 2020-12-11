@@ -42,26 +42,1164 @@
 		</div>
 	   
 
-		<div class="container">
+		<div class="container" id="entrenamientos">
 			<div class="row">
 				<div class="col-12 titulo2 p-4 text-center">Entrenamientos</div>
 				
 			</div>
 			<div class="row justify-content-around p-5">
-				<button type="button" class="col-sm-12 col-md-4 btn btn-outline-primary p-2">Planificar</button>
-				<button type="button" class="col-sm-12 col-md-4 btn btn-outline-primary p-2">Entrenar</button>
+				<button type="button" class="col-sm-12 col-md-4 btn btn-outline-primary p-2" onclick="planificar()">Planificar</button>
+				<button type="button" class="col-sm-12 col-md-4 btn btn-outline-primary p-2" onclick="entrenar()">Entrenar</button>
 			</div>
+		</div>
+
+		<div class="container-fluid m-3" id="planificar">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8 card pb-2 card-grande">
+					<h2 class="card-header text-center">
+					  Planificación
+					</h2>
+
+					<div class="row text-center">
+						<div class="card-body col-sm-12 col-xl-6">
+							<div class="card">
+								<h5 class="card-header">Piernas</h5>
+								<table class="table">
+									<thead class="thead-dark">
+									  <tr>
+										<th scope="col">Ejercicios</th>
+										<th scope="col">Series</th>
+										<th scope="col">Repeticiones</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck1">
+												<label class="custom-control-label" for="customCheck1">Sentadillas</label>
+											  </div>
+										</td>
+
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck2">
+												<label class="custom-control-label" for="customCheck2">Estocadas</label>
+											  </div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck3">
+												<label class="custom-control-label" for="customCheck3">Posteriores</label>
+											  </div>
+										</td>
+								
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck4">
+												<label class="custom-control-label" for="customCheck4">Pantorrillas</label>
+											</div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+									  </tr>
+									</tbody>
+								  </table>
+							</div>
+						</div>
+
+						<div class="card-body col-sm-12 col-xl-6">
+							<div class="card">
+								<h5 class="card-header">Brazos</h5>
+								<table class="table">
+									<thead class="thead-dark">
+									  <tr>
+										<th scope="col">Ejercicios</th>
+										<th scope="col">Series</th>
+										<th scope="col">Repeticiones</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck5">
+												<label class="custom-control-label" for="customCheck5">Biceps</label>
+											  </div>
+										</td>
+
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck6">
+												<label class="custom-control-label" for="customCheck6">Triceps</label>
+											  </div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck7">
+												<label class="custom-control-label" for="customCheck7">Hombros</label>
+											  </div>
+										</td>
+								
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck8">
+												<label class="custom-control-label" for="customCheck8">Antebrazos</label>
+											</div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+									  </tr>
+									</tbody>
+								  </table>
+							</div>
+						</div>
+
+						<div class="card-body col-sm-12 col-xl-6">
+							<div class="card">
+								<h5 class="card-header">Espalda</h5>
+								<table class="table">
+									<thead class="thead-dark">
+									  <tr>
+										<th scope="col">Ejercicios</th>
+										<th scope="col">Series</th>
+										<th scope="col">Repeticiones</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck13">
+												<label class="custom-control-label" for="customCheck13">Espinales</label>
+											  </div>
+										</td>
+
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck14">
+												<label class="custom-control-label" for="customCheck14">Puente invertido</label>
+											  </div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck15">
+												<label class="custom-control-label" for="customCheck15">Renegade row</label>
+											  </div>
+										</td>
+								
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck16">
+												<label class="custom-control-label" for="customCheck16">Flex escápulas</label>
+											</div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+									  </tr>
+									</tbody>
+								  </table>
+							</div>
+						</div>
+
+						<div class="card-body col-sm-12 col-xl-6">
+							<div class="card">
+								<h5 class="card-header">Core</h5>
+								<table class="table">
+									<thead class="thead-dark">
+									  <tr>
+										<th scope="col">Ejercicios</th>
+										<th scope="col">Series</th>
+										<th scope="col">Repeticiones</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck9">
+												<label class="custom-control-label" for="customCheck9">Abdominales</label>
+											  </div>
+										</td>
+
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck10">
+												<label class="custom-control-label" for="customCheck10">Plancha</label>
+											  </div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck11">
+												<label class="custom-control-label" for="customCheck11">Pecho</label>
+											  </div>
+										</td>
+								
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck12">
+												<label class="custom-control-label" for="customCheck12">Trapecio</label>
+											</div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+									  </tr>
+									</tbody>
+								  </table>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row">
+						<a href="#" class="btn btn-primary btn-sm col-sm-10 col-xl-4 ml-auto mr-auto mt-1" onclick="cancelarCargaplanif()">Cancelar</a>
+						<a href="#" class="btn btn-primary btn-sm col-sm-10 col-xl-4 ml-auto mr-auto mt-1" onclick="guardarPlanificacion()">Guardar</a>
+					</div>
+				</div>
+				<div class="col-2"></div>
+			</div>
+
+
+
+		</div>
+
+		<div class="container-fluid m-3" id="entrenar">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8 card pb-2 card-grande">
+					<h2 class="card-header text-center">
+					  Entrenamiento
+					</h2>
+
+					<div class="row text-center">
+						<div class="card-body col-sm-12 col-xl-6">
+							<div class="card">
+								<h5 class="card-header">Piernas</h5>
+								<table class="table">
+									<thead class="thead-dark">
+									  <tr>
+										<th scope="col">Ejercicios</th>
+										<th scope="col">Series</th>
+										<th scope="col">Repeticiones</th>
+										<th scope="col">Cumplido</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck101">
+												<label class="custom-control-label" for="customCheck101">Sentadillas</label>
+											  </div>
+										</td>
+
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+										<td>
+											<div class="form-group">
+												<select class="form-control form-control-sm">
+													<option>Si</option>
+													<option>No</option>
+												</select>
+											</div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck102">
+												<label class="custom-control-label" for="customCheck102">Estocadas</label>
+											  </div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+										<td>
+											<div class="form-group">
+												<select class="form-control form-control-sm">
+													<option>Si</option>
+													<option>No</option>
+												</select>
+											</div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck103">
+												<label class="custom-control-label" for="customCheck103">Posteriores</label>
+											  </div>
+										</td>
+								
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+										<td>
+											<div class="form-group">
+												<select class="form-control form-control-sm">
+													<option>Si</option>
+													<option>No</option>
+												</select>
+											</div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck104">
+												<label class="custom-control-label" for="customCheck104">Pantorrillas</label>
+											</div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+										<td>
+											<div class="form-group">
+												<select class="form-control form-control-sm">
+													<option>Si</option>
+													<option>No</option>
+												</select>
+											</div>
+										</td>
+									  </tr>
+									</tbody>
+								  </table>
+							</div>
+						</div>
+
+						<div class="card-body col-sm-12 col-xl-6">
+							<div class="card">
+								<h5 class="card-header">Brazos</h5>
+								<table class="table">
+									<thead class="thead-dark">
+									  <tr>
+										<th scope="col">Ejercicios</th>
+										<th scope="col">Series</th>
+										<th scope="col">Repeticiones</th>
+										<th scope="col">Cumplido</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck105">
+												<label class="custom-control-label" for="customCheck105">Biceps</label>
+											  </div>
+										</td>
+
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<select class="form-control form-control-sm">
+													<option>Si</option>
+													<option>No</option>
+												</select>
+											</div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck106">
+												<label class="custom-control-label" for="customCheck106">Triceps</label>
+											  </div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<select class="form-control form-control-sm">
+													<option>Si</option>
+													<option>No</option>
+												</select>
+											</div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck107">
+												<label class="custom-control-label" for="customCheck107">Hombros</label>
+											  </div>
+										</td>
+								
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+										<td>
+											<div class="form-group">
+												<select class="form-control form-control-sm">
+													<option>Si</option>
+													<option>No</option>
+												</select>
+											</div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck108">
+												<label class="custom-control-label" for="customCheck108">Antebrazos</label>
+											</div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+										<td>
+											<div class="form-group">
+												<select class="form-control form-control-sm">
+													<option>Si</option>
+													<option>No</option>
+												</select>
+											</div>
+										</td>
+									  </tr>
+									</tbody>
+								  </table>
+							</div>
+						</div>
+
+						<div class="card-body col-sm-12 col-xl-6">
+							<div class="card">
+								<h5 class="card-header">Espalda</h5>
+								<table class="table">
+									<thead class="thead-dark">
+									  <tr>
+										<th scope="col">Ejercicios</th>
+										<th scope="col">Series</th>
+										<th scope="col">Repeticiones</th>
+										<th scope="col">Cumplido</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck109">
+												<label class="custom-control-label" for="customCheck109">Espinales</label>
+											  </div>
+										</td>
+
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+										<td>
+											<div class="form-group">
+												<select class="form-control form-control-sm">
+													<option>Si</option>
+													<option>No</option>
+												</select>
+											</div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck110">
+												<label class="custom-control-label" for="customCheck110">Puente invertido</label>
+											  </div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+										<td>
+											<div class="form-group">
+												<select class="form-control form-control-sm">
+													<option>Si</option>
+													<option>No</option>
+												</select>
+											</div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck111">
+												<label class="custom-control-label" for="customCheck111">Renegade row</label>
+											  </div>
+										</td>
+								
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+										<td>
+											<div class="form-group">
+												<select class="form-control form-control-sm">
+													<option>Si</option>
+													<option>No</option>
+												</select>
+											</div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck112">
+												<label class="custom-control-label" for="customCheck112">Flex escápulas</label>
+											</div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+										<td>
+											<div class="form-group">
+												<select class="form-control form-control-sm">
+													<option>Si</option>
+													<option>No</option>
+												</select>
+											</div>
+										</td>
+									  </tr>
+									</tbody>
+								  </table>
+							</div>
+						</div>
+
+						<div class="card-body col-sm-12 col-xl-6">
+							<div class="card">
+								<h5 class="card-header">Core</h5>
+								<table class="table">
+									<thead class="thead-dark">
+									  <tr>
+										<th scope="col">Ejercicios</th>
+										<th scope="col">Series</th>
+										<th scope="col">Repeticiones</th>
+										<th scope="col">Cumplido</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck113">
+												<label class="custom-control-label" for="customCheck113">Abdominales</label>
+											  </div>
+										</td>
+
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+										<td>
+											<div class="form-group">
+												<select class="form-control form-control-sm">
+													<option>Si</option>
+													<option>No</option>
+												</select>
+											</div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck114">
+												<label class="custom-control-label" for="customCheck114">Plancha</label>
+											  </div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+										<td>
+											<div class="form-group">
+												<select class="form-control form-control-sm">
+													<option>Si</option>
+													<option>No</option>
+												</select>
+											</div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck115">
+												<label class="custom-control-label" for="customCheck115">Pecho</label>
+											  </div>
+										</td>
+								
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+										<td>
+											<div class="form-group">
+												<select class="form-control form-control-sm">
+													<option>Si</option>
+													<option>No</option>
+												</select>
+											</div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck116">
+												<label class="custom-control-label" for="customCheck116">Trapecio</label>
+											</div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<input type="number" class="form-control" id="exampleFormControlInput1">
+											  </div>
+										</td>
+										<td>
+											<div class="form-group">
+												<select class="form-control form-control-sm">
+													<option>Si</option>
+													<option>No</option>
+												</select>
+											</div>
+										</td>
+									  </tr>
+									</tbody>
+								  </table>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row">
+						<a href="#" class="btn btn-primary btn-sm col-sm-10 col-xl-4 ml-auto mr-auto mt-1" onclick="cancelarCargaentr()">Cancelar</a>
+						<a href="#" class="btn btn-primary btn-sm col-sm-10 col-xl-4 ml-auto mr-auto mt-1" onclick="guardarEntrenamiento()">Guardar</a>
+					</div>
+				</div>
+				<div class="col-2"></div>
+			</div>
+
+
+
 		</div>
 
 
 		<div class="container-fluid"> 
-			<div class="footer">				
+			<footer class="footer">				
 				<ul>
 					<li><a href="https://twitter.com/entrenamientosp" target="blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
 					<li><a href="https://facebook.com/entrenamientosp" target="blank"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
 					<li><a href="https://instagram.com/entrenamientosp" targer="blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
 				</ul>
-			</div>
+			</footer>
 		</div>
 	
 		
@@ -71,6 +1209,8 @@
 		<!--BOOTSTRAP SCRIPT-->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		<!--CUSTOM SCRIPT-->
+		<script src="js/alumnos.js"></script>
 		
 
     </body>
